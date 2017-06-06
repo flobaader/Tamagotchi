@@ -13,7 +13,7 @@ public class Tamagotchi
     public int hp;
     public int level;
     public Sound sound;
-    
+      
     public Tamagotchi(String tamagotchiName, Sound Tsound)
     {
           tamagotchiName = name;
@@ -26,17 +26,16 @@ public class Tamagotchi
           hp = 100;
           level = 1;
           Tsound = sound;
-          
     }
 
-    public eat ()
+    public void eat (Food food)
     {
        if (hunger == true)
        {
-           Food.givefood();
-        if (hungerlevel + value <=100)
+           food.giveFood();
+        if (hungerlevel + food.value <= 100)
         {
-            hungerlevel = hungerlevel + value;
+            hungerlevel = hungerlevel + food.value;
         }
         else
         {
@@ -44,4 +43,4 @@ public class Tamagotchi
         }
        }
     }
-
+}

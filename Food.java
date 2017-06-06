@@ -9,9 +9,8 @@ public class Food
        Fname = name;
     }
     
-    public int giveFood(String Fname)
+    public int giveFood()
     {
-        Fname = name;
         return value;
     }
 }
