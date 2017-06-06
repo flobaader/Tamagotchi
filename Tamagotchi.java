@@ -5,22 +5,32 @@ public class Tamagotchi
     public String mood;
     public String fatigue;
     public boolean hunger;
-    public int toilet;
+    public int toiletlevel;
     public int hygiene;
     public int money;
     public int mass;
-    public int healthpoints;
+    public int hp;
     public int level;
-    public Costume costume;
-    public Figure figure;
-    public Background background;
-    public Achievement achievement;
     public Sound sound;
     
-    public Tamagotchi()
+    public Tamagotchi(String tamagotchiName, Sound Tsound)
+    {
+          tamagotchiName = name;
+          age = 0;
+          hunger = false;
+          toiletlevel = 0;
+          hygiene = 100;
+          money = 0;
+          mass = 1;
+          hp = 100;
+          level = 1;
+          Tsound = sound;
+          
+    }
+
+    public essen ()
     {
         
     }
-
 }
 
