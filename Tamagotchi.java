@@ -5,6 +5,7 @@ public class Tamagotchi
     public String mood;
     public String fatigue;
     public boolean hunger;
+    public int hungerlevel;
     public int toiletlevel;
     public int hygiene;
     public int money;
@@ -28,9 +29,19 @@ public class Tamagotchi
           
     }
 
-    public essen ()
+    public eat ()
     {
-        
+       if (hunger == true)
+       {
+           Food.givefood();
+        if (hungerlevel + value <=100)
+        {
+            hungerlevel = hungerlevel + value;
+        }
+        else
+        {
+            hungerlevel = 100;
+        }
+       }
     }
-}
 
