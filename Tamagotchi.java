@@ -7,7 +7,7 @@ public class Tamagotchi
     public boolean hunger;
     public int hungerlevel;
     public int toiletlevel;
-    public int hygiene;         //Baum
+    public int hygiene;         
     public int money;
     public int mass;
     public int hp;
