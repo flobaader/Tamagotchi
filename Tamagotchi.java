@@ -12,9 +12,8 @@ public class Tamagotchi
     public int mass;
     public int hp;
     public int level;
-    public Sound sound;
       
-    public Tamagotchi(String tamagotchiName, Sound Tsound)
+    public Tamagotchi(String tamagotchiName)
     {
           tamagotchiName = name;
           age = 0;
@@ -25,7 +24,6 @@ public class Tamagotchi
           mass = 1;
           hp = 100;
           level = 1;
-          Tsound = sound;
     }
 
     public void eat (Food food)
