@@ -1,4 +1,4 @@
-
 package tamagotchi;
 
-public enum State {AWAKE, SLEAPING};
+public enum State {AWAKE, SLEEPING}
+

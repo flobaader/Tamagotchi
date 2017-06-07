@@ -1,4 +1,3 @@
-
 package tamagotchi;
 
-public enum LifeState {ALIVE, DEAD};
+public enum LifeState {AWAKE, DEAD}
