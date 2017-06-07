@@ -6,12 +6,18 @@ public class Tamagotchi
     protected State state;
     protected boolean hungry;
     protected int hunger;
-    protected int speeliness;
+    protected int sleepyness;
     protected String name;
-            
+    protected BufferedImage normalState1;
+    
     public Tamagotchi(String Tname)
     {
-        
+      LifeState lifestate = LifeState.ALIVE;
+      State state = State.AWAKE;
+      boolean hungry = false;
+      int hunger = 100;
+      int sleepyness = 0;
+      String name = Tname;
     }
 
     public LifeState getLifeState() {
@@ -47,14 +53,15 @@ public class Tamagotchi
     }
 
     public int getSpeeliness() {
-        return speeliness;
+        return sleepyness;
     }
 
     public void setSpeeliness(int speeliness) {
-        this.speeliness = speeliness;
+        this.sleepyness = speeliness;
     }
 
     public String getName() {
         return name;
     }
+    
 }
