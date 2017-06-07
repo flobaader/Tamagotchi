@@ -64,4 +64,15 @@ public class Tamagotchi
         return name;
     }
     
+    public void eat (int Fvalue)
+    {
+        if (hunger + Fvalue >= 100)
+        {
+            hunger = 100;
+        }
+        else 
+        {
+            hunger = hunger + Fvalue;
+        }
+    }
 }
