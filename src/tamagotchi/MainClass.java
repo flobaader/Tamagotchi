@@ -1,12 +1,11 @@
-
 package tamagotchi;
 
-public class MainClass 
-{
+public class MainClass {
+
     private Controller controller;
-    
     public static void main(String[] args)
     {
-        controller = new Controller();     
+        Controller controller = new Controller();
     }
+    
 }
