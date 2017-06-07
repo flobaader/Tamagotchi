@@ -26,6 +26,7 @@ public class Tamagotchi
       int sleepyness = 0;
       String name = Tname;
       time();
+      sleepTime();
     }
 
     public LifeState getLifeState() {
@@ -111,7 +112,40 @@ public class Tamagotchi
     }
     
 
-      
+      public void sleepTime()
+    { 
+        if (state == State.AWAKE)
+        {
+        Timer sleepTimer = new Timer();
+        
+        sleepTimer.scheduleAtFixedRate(new TimerTask()
+            {
+                @Override
+                public void run()
+                {
+                sleepyness = sleepyness + 1;
+                }
+            }, 1, 5000);
+        }
+        else 
+        {
+            Timer sleepTimer = new Timer();
+        
+        sleepTimer.scheduleAtFixedRate(new TimerTask()
+            {
+                @Override
+                public void run()
+                {
+                sleepyness = sleepyness - 1;
+                }
+            }, 1, 5000);
+        }
+        if (sleepyness == 100)
+        {
+            LifeState state = LifeState.DEAD;
+        }
+        
+    }    
 
 
 
